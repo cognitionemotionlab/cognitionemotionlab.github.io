@@ -147,7 +147,7 @@ permalink: /
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-10">
         {% if site.data.funfacts.size > 0 %}
         <div class="block">
           {% for ff in site.data.funfacts %}
@@ -163,23 +163,6 @@ permalink: /
           </ul>
         </div>
         {% endif %}
-      </div>
-      <div class="col-md-6">
-       
-        <div class="testimonial-carousel">
-          <div id="testimonial-slider" class="owl-carousel">
-            {% for post in site.publications reversed %}
-                <i class="ion-ios-book"></i>
-                <H3>{{ tm.title }}</H3>
-                <div class="user">
-                  <img src="{{ tm.image }}" alt="People">
-                  <p><span>{{ tm.name }}</span> <a href="{{ tm.paperurl }}">Read the paper here!</a></p>
-                </div>
-            {% endfor %}
-           
-          </div>
-        </div>
-        
       </div>
     </div>
   </div>
