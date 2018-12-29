@@ -170,11 +170,11 @@ permalink: /
           <div id="testimonial-slider" class="owl-carousel">
             {% for tm in site.data.testimonials %}
             <div>
-                <img src="img/cotation.png" alt="IMG">
+                <i class="ion-ios-book"></i>
                 <p>{{ tm.testimonial }}</p>
                 <div class="user">
-                  <img src="{{ tm.image }}" alt="Pepole">
-                  <p><span>{{ tm.name }}</span> {{ tm.title }}</p>
+                  <img src="{{ tm.image }}" alt="People">
+                  <p><span>{{ tm.name }}</span> <a href="{{ tm.paperurl }}">Read the paper here!</a></p>
                 </div>
             </div>
             {% endfor %}
