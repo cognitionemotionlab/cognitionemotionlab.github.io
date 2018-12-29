@@ -88,12 +88,11 @@ header .navbar-default .navbar-nav li a {
   font-size: 15px;
 }
 header .navbar-default .navbar-nav li a:hover {
-  color: #000;
-  border-bottom: 3px solid #AC3427;
+  color: #AC3427;
+  /*border-bottom: 3px solid #AC3427;*/
+  font-weight:bold;
 }
-header .navbar-default .navbar-nav li a.active {
-  border-bottom: 3px solid #AC3427;
-}
+
 /*---------------------------------------------
 					Index Start
 -----------------------------------------------*/
