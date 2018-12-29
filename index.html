@@ -165,19 +165,18 @@ permalink: /
         {% endif %}
       </div>
       <div class="col-md-6">
-        {% if site.data.testimonials.size > 0 %}
+        {% if site.publications.size > 0 %}
         <div class="testimonial-carousel">
           <div id="testimonial-slider" class="owl-carousel">
-            {% for tm in site.data.testimonials %}
-            <div>
+            {% for post in site.publications reversed %}
                 <i class="ion-ios-book"></i>
                 <H3>{{ tm.title }}</H3>
                 <div class="user">
                   <img src="{{ tm.image }}" alt="People">
                   <p><span>{{ tm.name }}</span> <a href="{{ tm.paperurl }}">Read the paper here!</a></p>
                 </div>
-            </div>
             {% endfor %}
+           
           </div>
         </div>
         {% endif %}
