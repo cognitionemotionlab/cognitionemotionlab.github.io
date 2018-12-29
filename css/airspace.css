@@ -90,7 +90,6 @@ header .navbar-default .navbar-nav li a {
 header .navbar-default .navbar-nav li a:hover {
   color: #AC3427;
   /*border-bottom: 3px solid #AC3427;*/
-  font-weight:bold;
 }
 
 /*---------------------------------------------
