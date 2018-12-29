@@ -206,8 +206,8 @@ font header .navbar-default .navbar-nav li a:hover {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: #ADADAD;
-  opacity: 0.2;
+  /*--background: #ADADAD;
+  opacity: 0.2;--*/
 }
 #call-to-action h2 {
   padding-bottom: 20px;
