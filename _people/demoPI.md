@@ -1,6 +1,6 @@
 ---
 layout: member
-title: Trevor Bedford
+title: Johnny Appleseed
 position: Principal investigator
 handle: trvrb
 email: trevor@bedford.io
@@ -8,7 +8,7 @@ twitter: trvrb
 github: trvrb
 scholar: RIi-1pAAAAAJ
 calendar: /calendar/
-image: /images/team/trevor-bedford.jpg
+image: /img/team/profile.png
 cv: /pdfs/team/trevor-bedford-cv.pdf
 ---
 
