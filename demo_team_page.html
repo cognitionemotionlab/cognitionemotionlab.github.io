@@ -1,20 +1,19 @@
 ---
-layout: page
-title: Our People
-permalink: /people/
+layout: default
+title: bedford lab / team
+categories:
+ - team
 ---
 
 <div class="row">
 	<div class="col-md-12">
 		<div class="title">
-			Current Lab Members
+			Current members
 		</div>
 	</div>
 </div>
 
 <div class="bigspacer"></div>
-
-<!-- Lab Member section. Includes photos. -->
 
 {% for member in site.people reversed %}
 	{% if member.alumni != true %}
@@ -47,7 +46,6 @@ permalink: /people/
 
 <div class="bigspacer"></div>
 
-<!-- Alumni Section - With no photos -->
 {% for member in site.people reversed %}
 	{% if member.alumni == true %}
     {% cycle 'add rows 2': '<div class="row">', nil, nil %}
