@@ -4,17 +4,108 @@ title: Our People
 permalink: /people/
 ---
 
-<div class="row">
-	<div class="col-md-12">
-		<div class="title">
-			Current Lab Members
-		</div>
-	</div>
-</div>
-
-<div class="bigspacer"></div>
+ <!-- Slider Start -->
+<section id="global-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h1>Who Are We?</h1>
+                    <p>Past and present, the members of CEL are a diverse, interesting group of scholars.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Lab Member section. Includes photos. -->
+
+ <!-- Portfolio Start -->
+<section id="portfolio-work">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
+              <div class="portfolio-menu">
+                <ul>
+                    <li class="filter" data-filter="all">Everyone</li>
+                    <li class="filter" data-filter=".Faculty">Texas Tech Faculty</li>
+                    <li class="filter" data-filter=".Other">Other Faculty</li>
+                    <li class="filter" data-filter=".GradStu">Graduate Students</li>
+                    <li class="filter" data-filter=".Undergrad">Undergraduates</li>
+                    <li class="filter" data-filter=".Alumni">Alumni</li>
+                </ul>
+              </div>
+              <div class="portfolio-contant">
+                <ul id="portfolio-contant-active">
+                    <li class="mix Faculty">
+                      <a href="#">
+                        <img src="{{ site.baseurl }}/img/portfolio/work1.jpg" alt="">
+                        <div class="overly">
+                          <div class="position-center">
+                            <h2>Tesla Motors</h2>
+                            <p>Labore et dolore magna aliqua. Ut enim ad </p>
+
+                          </div>
+                        </div>
+                      </a>
+                  </li>
+                  <li class="mix Other">
+                    <a href="#">
+                      <img src="{{ site.baseurl }}/img/portfolio/work2.jpg" alt="">
+                      <div class="overly">
+                        <div class="position-center">
+                          <h2>Tesla Motors</h2>
+                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
+
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="mix GradStu">
+                    <a href="#">
+                      <img src="{{ site.baseurl }}/img/portfolio/work3.jpg" alt="">
+                      <div class="overly">
+                        <div class="position-center">
+                          <h2>Tesla Motors</h2>
+                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
+
+                        </div>
+                      </div>
+
+                    </a>
+                  </li>
+                  <li class="mix Undergrad">
+                    <a href="#">
+                      <img src="{{ site.baseurl }}/img/portfolio/work4.jpg" alt="">
+                      <div class="overly">
+                        <div class="position-center">
+                          <h2>Tesla Motors</h2>
+                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
+
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="mix Alumni">
+                    <a href="#">
+                      <img src="{{ site.baseurl }}/img/portfolio/work5.jpg" alt="">
+                      <div class="overly">
+                        <div class="position-center">
+                          <h2>Tesla Motors</h2>
+                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
+
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
 
 {% for member in site.people reversed %}
 	{% if member.alumni != true %}

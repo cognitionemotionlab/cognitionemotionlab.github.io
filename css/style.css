@@ -32,3 +32,22 @@
 .post-area a:hover {
   color: #0D0017;
 }
+
+/* The following are added to the style.css as a way of melding the members page from another Jekyll site based on Blotter */
+
+
+.hugespacer {
+	height: 50px;
+}
+
+.bigspacer {
+	height: 20px;
+}
+
+.spacer {
+	height: 10px;
+}
+
+.smallspacer {
+	height: 5px;
+}
