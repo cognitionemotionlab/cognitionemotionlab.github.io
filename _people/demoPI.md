@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Johnny Appleseed
-position: Principal investigator
+position: ttufaculty
 handle: trvrb
 email: trevor@bedford.io
 twitter: trvrb
