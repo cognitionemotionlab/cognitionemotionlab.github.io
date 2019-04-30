@@ -42,7 +42,7 @@ permalink: /people/
                     
                     <li class="mix Faculty">
                       {% for member in site.people reversed %}
-	                      {% if member.position == ttufaculty %}
+	                      <!--{% if member.position == ttufaculty %} -->
   				                  <a href="{{ member.url }}">
     				                  <img src="{{ member.image }}" alt="{{ member.title }}">
   				                      <div class="overly">
@@ -52,7 +52,7 @@ permalink: /people/
                                   </div>
                                 </div>
   				                  </a>
-                        {% endif %}
+                        <!--{% endif %} -->
                       {% endfor %}
                   </li>
                   
