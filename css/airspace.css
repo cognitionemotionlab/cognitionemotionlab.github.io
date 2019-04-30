@@ -505,7 +505,7 @@ header .navbar-default .navbar-nav li a:hover {
 }
 #portfolio-work .block .portfolio-contant ul img {
   width: 100%;
-  max-height: 175px;
+  max-height: 300px;
   overflow: hidden;
 }
 #portfolio-work .block .portfolio-contant .overly {
