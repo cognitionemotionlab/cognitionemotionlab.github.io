@@ -41,6 +41,7 @@ permalink: /people/
                 <ul id="portfolio-contant-active">
                     
                     <li class="mix Faculty">
+                      {% include base_path %}
                       {% for member in site.people reversed %}
 	                      <!--{% if member.position == ttufaculty %} -->
   				                  <a href="{{ member.url }}">
