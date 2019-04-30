@@ -41,16 +41,15 @@ permalink: /people/
                     <li class="mix Faculty">
                       {% for member in site.people reversed %}
 	                      {% if member.position == ttufaculty %}
-                           {% cycle 'add rows': '<div class="row">', nil, nil %}
-  				                        <a href="{{ member.url }}">
-    				                      <img src="{{ member.image }}" alt="{{ member.title }}">
-  				                        <div class="overly">
-                                    <div class="position-center">
-                                      <h2>{{ member.title }}</h2>
-                                      <p>{{ member.position }}</p>
-                                    </div>
+  				                  <a href="{{ member.url }}">
+    				                  <img src="{{ member.image }}" alt="{{ member.title }}">
+  				                      <div class="overly">
+                                  <div class="position-center">
+                                    <h2>{{ member.title }}</h2>
+                                    <p>{{ member.position }}</p>
                                   </div>
-  				                        </a>
+                                </div>
+  				                  </a>
                       <!--{% cycle 'close rows': nil, nil, '</div>' %} -->
                         {% endif %}
                       {% endfor %}
