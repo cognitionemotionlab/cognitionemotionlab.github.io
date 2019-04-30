@@ -36,8 +36,10 @@ permalink: /people/
                     <li class="filter" data-filter=".Alumni">Alumni</li>
                 </ul>
               </div>
+              
               <div class="portfolio-contant">
                 <ul id="portfolio-contant-active">
+                    
                     <li class="mix Faculty">
                       {% for member in site.people reversed %}
 	                      {% if member.position == ttufaculty %}
@@ -53,6 +55,7 @@ permalink: /people/
                         {% endif %}
                       {% endfor %}
                   </li>
+                  
                   <li class="mix Other">
                     <a href="#">
                       <img src="{{ site.baseurl }}/img/team/profile.png" alt="">
@@ -64,6 +67,7 @@ permalink: /people/
                       </div>
                     </a>
                   </li>
+                  
                   <li class="mix GradStu">
                     <a href="#">
                       <img src="{{ site.baseurl }}/img/portfolio/work3.jpg" alt="">
@@ -77,6 +81,7 @@ permalink: /people/
 
                     </a>
                   </li>
+                  
                   <li class="mix Undergrad">
                     <a href="#">
                       <img src="{{ site.baseurl }}/img/portfolio/work4.jpg" alt="">
@@ -89,6 +94,7 @@ permalink: /people/
                       </div>
                     </a>
                   </li>
+                  
                   <li class="mix Alumni">
                     <a href="#">
                       <img src="{{ site.baseurl }}/img/portfolio/work5.jpg" alt="">
@@ -109,50 +115,4 @@ permalink: /people/
     </div>
 </section>
 
-{% for member in site.people reversed %}
-	{% if member.alumni != true %}
-    {% cycle 'add rows': '<div class="row">', nil, nil %}
-		<div class="col-md-4 memberbox">
-			<div class="media">
-  				<a class="pull-left" href="{{ member.url }}">
-    				<img width=160 class="media-object" src="{{ member.image }}">
-  				</a>
- 			 	<div class="media-body">
-    				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-    				<p class="note">{{ member.position }}</p>
-  				</div>
-			</div>
-			<div class="bigspacer"></div>
-			<div class="bigspacer"></div>
-        </div>
-    {% cycle 'close rows': nil, nil, '</div>' %}
-    {% endif %}
-{% endfor %}
-{% cycle 'close rows': nil, '</div>', '</div>' %}
 
-
-
-<div class="bigspacer"></div>
-
-<!-- Alumni Section - With no photos -->
-{% for member in site.people reversed %}
-	{% if member.alumni == true %}
-    {% cycle 'add rows 2': '<div class="row">', nil, nil %}
-		<div class="col-md-4 memberbox">
-			<div class="media">
-  				<!--
-  				<a class="pull-left" href="{{ member.url }}">
-    				<img width=160 class="media-object" src="{{ member.image }}">
-  				</a>
-  				-->
- 			 	<div class="media-body">
-    				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-    				<p class="note">{{ member.position }}</p>
-  				</div>
-			</div>
-			<div class="bigspacer"></div>
-        </div>
-    {% cycle 'close rows 2': nil, nil, '</div>' %}
-    {% endif %}
-{% endfor %}
-{% cycle 'close rows 2': nil, '</div>', '</div>' %}
