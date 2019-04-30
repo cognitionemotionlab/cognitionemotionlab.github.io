@@ -476,7 +476,7 @@ header .navbar-default .navbar-nav li a:hover {
   position: relative;
 }
 #portfolio-work .block .portfolio-contant ul li:hover .overly {
-  opacity: 1;
+  opacity: .5;
 }
 #portfolio-work .block .portfolio-contant ul li:hover .position-center {
   position: absolute;
@@ -505,7 +505,8 @@ header .navbar-default .navbar-nav li a:hover {
 }
 #portfolio-work .block .portfolio-contant ul img {
   width: 100%;
-  height: auto;
+  max-height: 175px;
+  overflow: hidden;
 }
 #portfolio-work .block .portfolio-contant .overly {
   position: absolute;
