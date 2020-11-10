@@ -17,8 +17,8 @@ permalink: /work/
     </div>
 </section>
 
+{% include base_path %}
+
 {% for post in site.publications reversed %}
-<div class="post-area">
   {% include archive-single.html %}
-</div>
 {% endfor %}
