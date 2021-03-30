@@ -3,7 +3,8 @@ layout: page
 title: Our Work
 permalink: /work/
 ---
-    <!-- Slider Start -->
+
+<!-- Slider Start -->
 <section id="global-header">
     <div class="container">
         <div class="row">
@@ -17,6 +18,4 @@ permalink: /work/
     </div>
 </section>
 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+{% include pub_list.html %}
