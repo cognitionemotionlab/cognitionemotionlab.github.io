@@ -6,7 +6,7 @@ email: christina.j.najera@ttu.edu
 twitter: cj_jmnz
 github: 
 scholar: 
-image: /img/team/profile.png
+image: /images/team/christina-najera.jpeg
 cv: /pdfs/team/demo-member-CV.pdf
 ---
 

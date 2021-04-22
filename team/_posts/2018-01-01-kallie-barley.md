@@ -5,7 +5,7 @@ position: Doctoral Candidate
 handle: Kallie K. Barley
 email: kallie.barley@ttuhsc.edu
 twitter: kalliekate
-image: /img/team/profile.png
+image: /images/team/kallie-barley.jpeg
 ---
 
 I am of the [Cognition & Emotion Lab](http://www.ttucel.com/). I began working in politics since I was 8 years old, and politics quickly became my passion. I have spent time on Capitol Hill and have been involved with multiple political organizations. My focus at this time is combining political communication, source credibility and psychological reactance theory to work to better understand the ever-growing political division in the United States. My cognate is statistics, and I plan to be completed with my degree by June 2021.

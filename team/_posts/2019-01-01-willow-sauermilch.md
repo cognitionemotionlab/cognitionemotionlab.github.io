@@ -5,7 +5,7 @@ position: Doctoral Candidate and Lab Manager
 email: willow.sauermilch@ttu.edu
 twitter: slpwills
 scholar: https://scholar.google.com/citations?hl=en&user=SXmrERQAAAAJ
-image: /images/team/willow-sauermilch.jpg
+image: /images/team/willow-sauermilch.jpeg
 cv: 
 ---
 
