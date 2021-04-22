@@ -20,97 +20,67 @@ permalink: /people/
 
 <!-- Lab Member section. Includes photos. -->
 
- <!-- Portfolio Start -->
-<section id="portfolio-work">
-    <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="block">
-              <div class="portfolio-menu">
-                <ul>
-                    <li class="filter" data-filter="all">Everyone</li>
-                    <li class="filter" data-filter=".Faculty">Texas Tech Faculty</li>
-                    <li class="filter" data-filter=".Other">Other Faculty</li>
-                    <li class="filter" data-filter=".GradStu">Graduate Students</li>
-                    <li class="filter" data-filter=".Undergrad">Undergraduates</li>
-                    <li class="filter" data-filter=".Alumni">Alumni</li>
-                </ul>
-              </div>
+<div class="row">
+	<div class="col-md-12">
+		<div class="title">
+			Current members
+		</div>
+	</div>
+</div>
 
-              <div class="portfolio-contant">
-                <ul id="portfolio-contant-active">
+<div class="bigspacer"></div>
 
-                  <li class="mix Faculty">
-                    {% for member in site.people reversed %}
-                      <!--{% if member.position == ttufaculty %} -->
-                          <a href="{{ member.url }}">
-                            <img src="{{ member.image }}" alt="{{ member.title }}">
-                              <div class="overly">
-                                <div class="position-center">
-                                  <h2>{{ member.title }}</h2>
-                                  <p>{{ member.position }}</p>
-                                </div>
-                              </div>
-                          </a>
-                      <!--{% endif %} -->
-                    {% endfor %}
-                  </li>
-
-                  <li class="mix Other">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/img/team/profile.png" alt="">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Demo Other Faculty</h2>
-                          <p>This person works with us, but does not work for TTU.</p>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li class="mix GradStu">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/img/portfolio/work3.jpg" alt="">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Demo Graduate Student</h2>
-                          <p>These are the best students ever.</p>
-
-                        </div>
-                      </div>
-
-                    </a>
-                  </li>
-
-                  <li class="mix Undergrad">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/img/portfolio/work4.jpg" alt="">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Demo Undergraduate Student</h2>
-                          <p>These students are also the best.</p>
-
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li class="mix Alumni">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/img/portfolio/work5.jpg" alt="">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Demo Alumni</h2>
-                          <p>These students were the best but then they left.</p>
-
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+{% for member in site.categories.team reversed %}
+	{% if member.alumni != true %}
+    {% cycle 'add rows': '<div class="row">', '', '' %}
+		<div class="col-md-4 memberbox">
+			<div class="media">
+  				<a class="pull-left" href="{{ member.url }}">
+    				<img width=160 class="media-object" src="{{ member.image }}">
+  				</a>
+ 			 	<div class="media-body">
+    				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+    				<p class="note">{{ member.position }}</p>
+  				</div>
+			</div>
+			<div class="bigspacer"></div>
+			<div class="bigspacer"></div>
         </div>
-    </div>
-</section>
+    {% cycle 'close rows': '', '', '</div>' %}
+    {% endif %}
+{% endfor %}
+{% cycle 'close rows': '', '</div>', '</div>' %}
+
+<!--
+	This is hidden until information can be pulled from Past Members of CEL.
+<div class="row">
+	<div class="col-md-12">
+		<div class="title">
+			 Past members
+		</div>
+	</div>
+</div>
+-->
+<div class="bigspacer"></div>
+
+{% for member in site.categories.team reversed %}
+	{% if member.alumni == true %}
+    {% cycle 'add rows 2': '<div class="row">', '', '' %}
+		<div class="col-md-4 memberbox">
+			<div class="media">
+  				<!--
+  				<a class="pull-left" href="{{ member.url }}">
+    				<img width=160 class="media-object" src="{{ member.image }}">
+  				</a>
+  				-->
+ 			 	<div class="media-body">
+    				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+    				<p class="note">{{ member.position }}</p>
+  				</div>
+			</div>
+			<div class="bigspacer"></div>
+        </div>
+    {% cycle 'close rows 2': '', '', '</div>' %}
+    {% endif %}
+{% endfor %}
+{% cycle 'close rows 2': '', '</div>', '</div>' %}
