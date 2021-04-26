@@ -1,0 +1,12 @@
+---
+layout: pub
+title:  "The effects of multimedia e-book use on vocabulary acquisition for children with language impairments."
+authors: "Sauermilch, W. S."
+date: 2018-07-01
+outlet: Evidence-based Practice Briefs
+pub_link: https://eric.ed.gov/?id=ED586942
+oa_link: https://images.pearsonclinical.com/images/assets/ebp/pdfs/EBP_V13A2_R2_1A.pdf
+osf_url: 
+categories: articles
+---
+Clinical Question: Do kindergarteners with language impairments who use e-books containing interactive features, compared to e-books with static illustrations, exhibit greater vocabulary gains? Method: Systematic Review. Study Sources: ASHA journals, EBSCO, Educational Resource Information Clearinghouse (ERIC), SpeechBite, Web of Science. Search Terms: The following terms were used individually and in several different combinations: language impairment, language disorder, language difficulty, e-book, ebook, electronic book, electronic storybook, enhanced e-book, touchscreen, hotspots, vocabulary. Number of Included Studies: 1 article (reporting two experimental studies). Primary Results: E-book reading provides a context conducive for vocabulary development for children diagnosed with severe language impairments. Basic e-books with auto-narration and static illustrations appear more advantageous for vocabulary development compared to enhanced e-books embedded with multimedia features. The severity of the language impairment is a key consideration when selecting e-books. Children with mild language impairments demonstrate gains in vocabulary skills regardless of the type of e-book used. However, as the severity of the language impairment increases, the presence of background music or sound effects negatively impacts vocabulary acquisition. Conclusions: A corpus of research investigates the relationship between e-book usage and the development of language and literacy skills in typically developing children. However, few empirical studies are available extending this line of research to children diagnosed with language impairments. Because of this lack of guidance, speech-language pathologists (SLPs) need to be cautious when selecting and using e-books. Until further research becomes available, SLPs should be mindful of the potential impact multimedia features and interactive hotspots have on vocabulary acquisition in children with language impairments.
